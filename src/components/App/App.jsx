@@ -1,9 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 // Styles
 import './general.scss';
-
+import './app-styles.scss'
 // Components
 
 import Sidebar from '../Sidebar';
@@ -13,8 +13,8 @@ function App() {
     return (
         <Router>
             <div className="wrapper">
-                <Main />
                 <Sidebar />
+                <Route path="/" component={Main} exact/>
             </div>
         </Router>
     )

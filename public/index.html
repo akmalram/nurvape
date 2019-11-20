@@ -9,15 +9,16 @@
 <body>
     <div id="root"></div>
 
-    
     <script src="./fontobserver.js"></script>
     <script>
-        const gilroyObserver = new FontFaceObserver('Gilroy');
-        Promise.all([
-            gilroyObserver.load()
-        ]).then(() => {
-            document.querySelector('html').classList.add('fonts-loaded');
-        });
+        window.addEventListener('load', () => {
+            const GilroyObserver = new FontFaceObserver('Gilroy');
+            Promise.all([
+                GilroyObserver.load()
+            ]).then(() => {
+                document.querySelector('html').classList.add('fonts-loaded');
+            });
+        })
     </script>
 </body>
 </html>

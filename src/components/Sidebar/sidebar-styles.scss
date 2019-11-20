@@ -1,0 +1,227 @@
+@import '../../assets/scss/smart-grid';
+@import '../../assets/scss/mixins';
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #111;
+    min-height: 100vh;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    z-index: 111;
+
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        @media only screen and (min-width: 769px) {
+            width: 250px;
+
+            .menu {
+                .link {
+                    padding: 6px 15px;
+
+                    span {
+                        opacity: 1;
+                        max-width: 150px;
+                    }
+
+                    svg {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .socials {
+                padding-left: 20px;
+                a {
+                    max-width: 50px;
+                    opacity: 1;
+                }
+            }
+
+            .copyright {
+                opacity: 1;
+            }
+        }
+    }
+
+    &.active {
+        @include sm-block {
+            width: 250px;
+
+            .menu {
+                .link {
+                    padding: 6px 15px;
+
+                    span {
+                        opacity: 1;
+                        max-width: 150px;
+                    }
+
+                    svg {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .socials {
+                padding-left: 20px;
+                a {
+                    max-width: 50px;
+                    opacity: 1;
+                }
+            }
+
+            .copyright {
+                opacity: 1;
+            }
+        }
+    }
+
+    .toggler-btn {
+        position: absolute;
+        left: 100%;
+        top: 10%;
+        display: none;
+
+        button {
+            background: #CB1D44;
+            border: none;
+            padding: 5px;
+            font-size: 25px;
+            color: #fff;
+            line-height: 1;
+            -webkit-appearance: none;
+
+            @include pulse(#CB1D44, 10, togglerbtnpulser);
+
+            svg {
+                transition: transform .3s ease-in-out;
+            }
+        }
+
+        &.active {
+            button svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .logo {
+        box-sizing: border-box;
+        padding: 5px;
+        text-align: center;
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100px;
+        }
+    }
+
+    .menu {
+        margin: auto 0;
+
+        .item {
+            margin-bottom: 10px;
+        }
+
+        .link {
+            color: #fff;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            font-size: 20px;
+            padding: 6px 10px;
+            box-sizing: border-box;
+            transition: all .3s ease;
+
+            svg {
+                font-size: 30px;
+                width: 40px;
+                display: inline-block;
+            }
+
+            span {
+                opacity: 0;
+                max-width: 0;
+                overflow: hidden;
+            }
+
+            svg,
+            span {
+                transition: all .3s ease;
+            }
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.295);
+            }
+        }
+
+        .link.active {
+            background: rgb(255, 255, 255);
+            color: #111;
+        }
+    }
+
+    .socials {
+        margin-top: auto;
+        transition: padding .3s ease-in-out;
+        padding-left: 10px;
+
+        a {
+            display: block;
+            font-size: 27px;
+            transition: all .5s ease-in-out;
+            overflow: hidden;
+            margin: 5px;
+            color: #fff;
+        }
+    }
+
+    .copyright {
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        transition: all .5s ease-in-out;
+        opacity: 0;
+        white-space: nowrap;
+        margin-bottom: 20px;
+    }
+
+    @include md-block {
+        .menu {
+
+            .item {
+                margin-bottom: 5px;
+            }
+
+            .link {
+                font-size: 18px;
+
+                svg {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    @include sm-block {
+        position: fixed;
+        left: -60px;
+        top: 0;
+
+        .toggler-btn {
+            display: block;
+        }
+
+        &.active {
+            left: 0;
+        }
+    }
+}

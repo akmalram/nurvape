@@ -1,0 +1,13 @@
+@import '../../assets/scss/smart-grid';
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.main,
+.sidebar {
+    flex-shrink: 0;
+}
