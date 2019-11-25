@@ -1,0 +1,44 @@
+@import '../../assets/scss/smart-grid';
+@import '../../assets/scss/mixins';
+
+.gallery {
+    width: 100%;
+    @include content-padding();
+
+    .video {
+        iframe {
+            z-index: -1;
+            max-width: 90%;
+            width: 800px;
+            height: 400px;
+            margin: 0 auto;
+            border: 2px solid #000;
+            border-radius: 3px;
+
+            @include sm-block {
+                height: 350px;
+            }
+
+            @include sm-block {
+                height: 180px;
+            }
+        }
+    }
+
+    .imgs {
+        margin-top: 40px;
+        .img {
+            @include col();
+            @include size(8);
+            @include size-sm(12);
+            @include size-xs(24);
+
+            margin-bottom: 20px;
+
+            img {
+                border-radius: 5px;
+                width: 350px;
+            }
+        }
+    }
+}

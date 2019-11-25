@@ -30,6 +30,10 @@ function Sidebar() {
         else setOpen(false);
     }
 
+    const closeSidebar = () => {
+        setOpen(false);
+    }
+
     let activenessClasses = `${isOpen ? 'active' : ''}`;
 
     let handleActiveLink = (e) => {
@@ -55,70 +59,91 @@ function Sidebar() {
     }
 
     return (
-        <aside className={`sidebar ${activenessClasses}`}>
-            <div className="logo">
-                <Link to="/">
-                    <img className="small" src="http://maxstroy.uz/newimg/NURVAPE-LOGO.png" alt="Logotype"/>
-                </Link>
-            </div>
-            <div className="menu">
-                <ul className="list">
-                    <li className="item">
-                        <Link to="/catalog/" className="link" onClick={(e) => handleActiveLink(e)}>
-                            <FontAwesomeIcon icon={faLayerGroup} />
-                            <span>Каталог</span>
-                        </Link>
-                    </li>
-                    <li className="item">
-                        <Link to="/distribution/" className="link" onClick={(e) => handleActiveLink(e)}>
-                            <FontAwesomeIcon icon={faMailBulk} />
-                            <span>Дистрибюция</span>
-                        </Link>
-                    </li>
-                    <li className="item">
-                        <Link to="/clients/" className="link" onClick={(e) => handleActiveLink(e)}>
-                            <FontAwesomeIcon icon={faUsers} />
-                            <span>Нашы клиенты</span>
-                        </Link>
-                    </li>
-                    <li className="item">
-                        <Link to="/aboutus/" className="link" onClick={(e) => handleActiveLink(e)}>
-                            <FontAwesomeIcon icon={faAddressCard} />
-                            <span>О нас</span>
-                        </Link>
-                    </li>
-                    <li className="item">
-                        <Link to="/gallery/" className="link active" onClick={(e) => handleActiveLink(e)}>
-                            <FontAwesomeIcon icon={faImages} />
-                            <span>Фото и видео <br/> материалы </span>
-                        </Link>
-                    </li>
-                    <li className="item">
-                        <Link to="/contacts/" className="link" onClick={(e) => handleActiveLink(e)}>
-                            <FontAwesomeIcon icon={faBookmark} />
-                            <span>Контакты</span>
-                        </Link>
-                    </li>
-                </ul>
-            </div>
-            <div className="socials">
-                <a href="http://any.site.com">
-                    <FontAwesomeIcon icon={faInstagram} />
-                </a>
-                <a href="http://any.site.com">
-                    <FontAwesomeIcon icon={faTwitter} />
-                </a>
-                <a href="http://any.site.com">
-                    <FontAwesomeIcon icon={faFacebook} />
-                </a>
-            </div>
-            <p className="copyright">Copyright © 2019</p>
-            <div className={`toggler-btn ${activenessClasses}`}>
-                <button onClick={() => toggleSidebar()}>
-                    <FontAwesomeIcon icon={faBars} />
-                </button>
-            </div>
-        </aside>
+        <React.Fragment>
+            <aside className={`sidebar ${activenessClasses}`}>
+                <div className="logo">
+                    <Link to="/">
+                        <img className="small" src="http://maxstroy.uz/nurimages/NURVAPE-LOGO.png" alt="Logotype"/>
+                    </Link>
+                </div>
+                <div className="menu">
+                    <ul className="list">
+                        <li className="item">
+                            <Link to="/catalog" className="link" onClick={(e) => {
+                                handleActiveLink(e);
+                                closeSidebar();
+                            }}>
+                                <FontAwesomeIcon icon={faLayerGroup} />
+                                <span>Каталог</span>
+                            </Link>
+                        </li>
+                        <li className="item">
+                            <Link to="/distribution" className="link" onClick={(e) => {
+                                handleActiveLink(e);
+                                closeSidebar();
+                            }}>
+                                <FontAwesomeIcon icon={faMailBulk} />
+                                <span>Дистрибюция</span>
+                            </Link>
+                        </li>
+                        <li className="item">
+                            <Link to="/clients" className="link" onClick={(e) => {
+                                handleActiveLink(e);
+                                closeSidebar();
+                            }}>
+                                <FontAwesomeIcon icon={faUsers} />
+                                <span>Нашы клиенты</span>
+                            </Link>
+                        </li>
+                        <li className="item">
+                            <Link to="/about" className="link" onClick={(e) => {
+                                handleActiveLink(e);
+                                closeSidebar();
+                            }}>
+                                <FontAwesomeIcon icon={faAddressCard} />
+                                <span>О нас</span>
+                            </Link>
+                        </li>
+                        <li className="item">
+                            <Link to="/gallery" className="link" onClick={(e) => {
+                                handleActiveLink(e);
+                                closeSidebar();
+                            }}>
+                                <FontAwesomeIcon icon={faImages} />
+                                <span>Фото и видео <br/> материалы </span>
+                            </Link>
+                        </li>
+                        <li className="item">
+                            <Link to="/contacts" className="link" onClick={(e) => {
+                                handleActiveLink(e);
+                                closeSidebar();
+                            }}>
+                                <FontAwesomeIcon icon={faBookmark} />
+                                <span>Контакты</span>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="socials">
+                    <a href="http://any.site.com">
+                        <FontAwesomeIcon icon={faInstagram} />
+                    </a>
+                    <a href="http://any.site.com">
+                        <FontAwesomeIcon icon={faTwitter} />
+                    </a>
+                    <a href="http://any.site.com">
+                        <FontAwesomeIcon icon={faFacebook} />
+                    </a>
+                </div>
+                <p className="copyright">Copyright © 2019</p>
+                <div className={`toggler-btn ${activenessClasses}`}>
+                    <button onClick={() => toggleSidebar()}>
+                        <FontAwesomeIcon icon={faBars} />
+                    </button>
+                </div>
+            </aside>
+            <div className="background" onClick={() => closeSidebar()}></div>
+        </React.Fragment>
     )
 }
 

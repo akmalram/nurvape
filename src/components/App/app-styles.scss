@@ -4,6 +4,12 @@
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
+    padding-left: 60px;
+    box-sizing: border-box;
+
+    @include sm-block {
+        padding-left: 0;
+    }
 }
 
 

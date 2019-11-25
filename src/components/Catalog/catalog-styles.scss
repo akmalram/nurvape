@@ -1,0 +1,126 @@
+@import '../../assets/scss/smart-grid';
+@import '../../assets/scss/mixins';
+
+.catalog {
+    width: 100%;
+
+    .title-primary {
+        margin-top: 30px;
+    }
+
+    .row {
+        justify-content: space-evenly;
+    }
+
+    .category {
+        @include content-padding();
+
+        &-title {
+            margin-bottom: 40px;
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+
+            @include sm-block {
+                font-size: 35px;
+            }
+
+            @include sm-block {
+                font-size: 30px;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .creamson .product {
+        @include size(6);
+        @include size-sm(12);
+        @include size-xs(24);
+    }
+
+    .product {
+        @include col();
+        @include size(8);
+        @include size-sm(12);
+        @include size-xs(24);
+
+        max-width: 350px;
+        padding: 20px 10px;
+        margin-bottom: 10px;
+        transition: all .3s ease-in-out;
+        text-align: center;
+
+        &-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            line-height: 1.10;
+        }
+
+        &-desc {
+            font-size: 16px;
+        }
+
+        &-desc, &-title {
+            padding-left: 10px;
+            box-sizing: border-box;
+        }
+
+        &-img img {
+            border-radius: 7px;
+        }
+
+        .btn-primary {
+            margin-top: 10px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+
+            li {
+                background: #111;
+                border-radius: 3px;
+                color: #fff;
+                padding: 3px 5px;
+                font-size: 14px;
+                margin: 0 3px;
+
+                transform: translateY(-50%);
+                opacity: 0;
+                transition: all 0.2s ease;
+            }
+
+            li:nth-of-type(2) {
+                transition-delay: .1s;
+            }
+
+            li:nth-of-type(3) {
+                transition-delay: .2s;
+            }
+        }
+
+        &:hover {
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            transform: translateY(-3px);
+        }
+
+        &:hover ul li {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+
+        @include sm-block {
+            ul li {
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
+
+        @include xs-block {
+            margin-bottom: 20px;
+        }
+    }
+}

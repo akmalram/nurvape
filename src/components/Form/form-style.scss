@@ -1,0 +1,96 @@
+@import '../../assets/scss/smart-grid';
+
+.form {
+    max-width: 95%;
+    width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    &-input {
+        padding: 12px 13px;
+        box-sizing: border-box;
+        font-size: 21px;
+        color: #000;
+        border: 2px solid #A9A9A9;
+        width: 100%;
+
+        &:focus {
+            outline: none;
+            border-color: #000;
+        }
+    }
+
+    @include xs-block {
+        padding: 0;
+    }
+
+    label {
+        position: relative;
+        margin-bottom: 40px;
+
+        @include xs-block {
+            margin-bottom: 20px;
+        }
+    }
+
+    .errorField {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        span {
+            display: none;
+        }
+
+        &.empty {
+            .empty {
+                display: block;
+            }
+        }
+        &.numbers {
+            .numbers {
+                display: block;
+            }
+        }
+        &.length {
+            .length {
+                display: block;
+            }
+        }
+        &.letters {
+            .letters {
+                display: block;
+            }
+        }
+        &.validEmail {
+            .validEmail {
+                display: block;
+            }
+        }
+    }
+
+    .text-center {
+        width: 100%;
+    }
+
+    .label-name,
+    .label-phone {
+        width: 45%;
+
+        @include xs-block {
+            width: 100%;
+        }
+    }
+
+    .label-email {
+        width: 100%;
+    }
+
+    .label-textarea {
+        width: 100%;
+    }
+
+    .input-textarea {
+        height: 100px;
+    }
+}

@@ -8,6 +8,12 @@ import './app-styles.scss'
 
 import Sidebar from '../Sidebar';
 import Main from '../Main';
+import Catalog from '../Catalog';
+import Contacts from '../Contacts';
+import Distribution from '../Distribution';
+import Clients from '../Clients';
+import About from '../About';
+import Gallery from '../Gallery';
 
 function App() {
     return (
@@ -15,6 +21,12 @@ function App() {
             <div className="wrapper">
                 <Sidebar />
                 <Route path="/" component={Main} exact/>
+                <Route path="/catalog" component={Catalog} exact/>
+                <Route path="/contacts" component={Contacts} exact/>
+                <Route path="/distribution" component={Distribution} exact/>
+                <Route path="/clients" component={Clients} exact/>
+                <Route path="/about" component={About} exact/>
+                <Route path="/gallery" component={Gallery} exact/>
             </div>
         </Router>
     )
