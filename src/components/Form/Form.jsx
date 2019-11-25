@@ -134,7 +134,6 @@ function Form() {
         })
         .done(function() {
             alert('Ваша заявка принята!');
-            e.target.reset();
         });
     }
 
