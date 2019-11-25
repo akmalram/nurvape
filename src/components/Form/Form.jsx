@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import jquery from 'jquery';
 
 import './form-style.scss';
 
@@ -104,7 +105,6 @@ function Form() {
 
     const submitBtn = isDisabled ? <button type="submit" disabled className="input-submit btn-primary">Отправить</button> : <button type="submit" className="input-submit btn-primary">Отправить</button>;
 
-
     const validateTextarea = (target) => {
         const data = target.value.trim();
         const targetEl = target.nextElementSibling;
@@ -125,8 +125,21 @@ function Form() {
         }
     }
 
+    const onSubmit = (e) => {
+        e.preventDefault();
+        jquery.ajax({
+            method: "POST",
+            url: "./send.php",
+            data: jquery(e.target).serialize(),
+        })
+        .done(function() {
+            alert('Ваша заявка принята!');
+            e.target.reset();
+        });
+    }
+
     return (
-        <form method="post" className="flex-between form">
+        <form onSubmit={e => onSubmit(e)} className="flex-between form">
             <label className="label-name">
                 <input type="text" onBlur={(e) => validateName(e.target)} name="name" placeholder="Ваше имя" className="form-input input-name" required />
                 <p className="errorField">

@@ -23,6 +23,12 @@
         }
     }
 
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .right {
         @include sm-block {
             order: 2;
