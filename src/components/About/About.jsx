@@ -1,5 +1,11 @@
 import React from 'react';
 import Swiper from 'react-id-swiper';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+    faInstagram,
+    faVk,
+    faFacebook
+} from '@fortawesome/free-brands-svg-icons';
 
 import 'swiper/css/swiper.min.css';
 import './about-styles.scss';
@@ -24,15 +30,26 @@ function About() {
                 <div className="slider">
                     <Swiper {...params}>
                         <div>
-                            <img src="http://maxstroy.uz/nurimages/cheerockeee-banner.jpg" alt="" />
+                            <img src="http://nurvape.ru/images/cheerockeee-banner.jpg" alt="" />
                         </div>
                         <div>
-                            <img src="http://maxstroy.uz/nurimages/creamson-banner.jpg" alt="" />
+                            <img src="http://nurvape.ru/images/creamson-banner.jpg" alt="" />
                         </div>
                         <div>
-                            <img src="http://maxstroy.uz/nurimages/juicesus_banner.jpg" alt="" />
+                            <img src="http://nurvape.ru/images/juicesus_banner.jpg" alt="" />
                         </div>
                     </Swiper>
+                </div>
+                <div className="socials">
+                    <a href="https://www.instagram.com/nurgroup/">
+                        <FontAwesomeIcon icon={faInstagram} />
+                    </a>
+                    <a href="http://any.site.com">
+                        <FontAwesomeIcon icon={faVk} />
+                    </a>
+                    <a href="http://any.site.com">
+                        <FontAwesomeIcon icon={faFacebook} />
+                    </a>
                 </div>
             </div>
             

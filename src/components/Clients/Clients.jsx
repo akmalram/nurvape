@@ -14,38 +14,38 @@ function Clients() {
                 <div className="row">
                     <div className="img">
                         <picture>
-                            <source srcSet="http://maxstroy.uz/logos/webp/armango.webp" type="image/webp" />
-                            <img src="http://maxstroy.uz/logos/armango.jpg" alt=""/>
+                            <source srcSet="http://nurvape.ru/images/logos/webp/armango.webp" type="image/webp" />
+                            <img src="http://nurvape.ru/images/logos/armango.png" alt="" />
                         </picture>
                     </div>
                     <div className="img">
                         <picture>
-                            <source srcSet="http://maxstroy.uz/logos/webp/papiroska.webp" type="image/webp" />
-                            <img src="http://maxstroy.uz/logos/papiroska.jpg" alt=""/>
+                            <source srcSet="http://nurvape.ru/images/logos/webp/papiroska.webp" type="image/webp" />
+                            <img src="http://nurvape.ru/images/logos/papiroska.png" alt="" />
                         </picture>
                     </div>
                     <div className="img">
                         <picture>
-                            <source srcSet="http://maxstroy.uz/logos/webp/super-smok.webp" type="image/webp" />
-                            <img src="http://maxstroy.uz/logos/super-smok.jpg" alt=""/>
+                            <source srcSet="http://nurvape.ru/images/logos/webp/super-smok.webp" type="image/webp" />
+                            <img src="http://nurvape.ru/images/logos/super-smok.png" alt="" />
                         </picture>
                     </div>
                     <div className="img">
                         <picture>
-                            <source srcSet="http://maxstroy.uz/logos/webp/vapeliga.webp" type="image/webp" />
-                            <img src="http://maxstroy.uz/logos/vapeliga.jpg" alt=""/>
+                            <source srcSet="http://nurvape.ru/images/logos/webp/vapeliga.webp" type="image/webp" />
+                            <img src="http://nurvape.ru/images/logos/vapeliga.png" alt="" />
                         </picture>
                     </div>
                     <div className="img">
                         <picture>
-                            <source srcSet="http://maxstroy.uz/logos/webp/vapeteka.webp" type="image/webp" />
-                            <img src="http://maxstroy.uz/logos/vapeteka.jpg" alt=""/>
+                            <source srcSet="http://nurvape.ru/images/logos/webp/vapeteka.webp" type="image/webp" />
+                            <img src="http://nurvape.ru/images/logos/vapeteka.png" alt="" />
                         </picture>
                     </div>
                     <div className="img">
                         <picture>
-                            <source srcSet="http://maxstroy.uz/logos/webp/vape-tiger.webp" type="image/webp" />
-                            <img src="http://maxstroy.uz/logos/vape-tiger.jpg" alt=""/>
+                            <source srcSet="http://nurvape.ru/images/logos/webp/vape-tiger.webp" type="image/webp" />
+                            <img src="http://nurvape.ru/images/logos/vape-tiger.jpg" alt="" />
                         </picture>
                     </div>
                 </div>

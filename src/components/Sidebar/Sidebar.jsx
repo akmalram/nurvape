@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faInstagram,
-    faTwitter,
+    faVk,
     faFacebook
 } from '@fortawesome/free-brands-svg-icons';
 
@@ -63,7 +63,7 @@ function Sidebar() {
             <aside className={`sidebar ${activenessClasses}`}>
                 <div className="logo">
                     <Link to="/">
-                        <img className="small" src="http://maxstroy.uz/nurimages/NURVAPE-LOGO.png" alt="Logotype"/>
+                        <img className="small" src="http://nurvape.ru/images/NURVAPE-LOGO.png" alt="Logotype"/>
                     </Link>
                 </div>
                 <div className="menu">
@@ -125,11 +125,11 @@ function Sidebar() {
                     </ul>
                 </div>
                 <div className="socials">
-                    <a href="http://any.site.com">
+                    <a href="https://www.instagram.com/nurgroup/">
                         <FontAwesomeIcon icon={faInstagram} />
                     </a>
                     <a href="http://any.site.com">
-                        <FontAwesomeIcon icon={faTwitter} />
+                        <FontAwesomeIcon icon={faVk} />
                     </a>
                     <a href="http://any.site.com">
                         <FontAwesomeIcon icon={faFacebook} />

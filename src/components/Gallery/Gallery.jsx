@@ -24,22 +24,22 @@ export default class Gallery extends React.Component {
                     <div className="imgs">
                         <div className="row">
                             <div className="img">
-                                <img src="http://maxstroy.uz/nurimages/classic-art.jpg" alt="" />
+                                <img src="http://nurvape.ru/images/classic-art.jpg" alt="" />
                             </div>
                             <div className="img">
-                                <img src="http://maxstroy.uz/nurimages/macadamia-art.jpg" alt="" />
+                                <img src="http://nurvape.ru/images/macadamia-art.jpg" alt="" />
                             </div>
                             <div className="img">
-                                <img src="http://maxstroy.uz/nurimages/chocolate-art.jpg" alt="" />
+                                <img src="http://nurvape.ru/images/chocolate-art.jpg" alt="" />
                             </div>
                             <div className="img">
-                                <img src="http://maxstroy.uz/nurimages/banana-art.jpg" alt="" />
+                                <img src="http://nurvape.ru/images/banana-art.jpg" alt="" />
                             </div>
                             <div className="img">
-                                <img src="http://maxstroy.uz/nurimages/kiwi-art.jpg" alt="" />
+                                <img src="http://nurvape.ru/images/kiwi-art.jpg" alt="" />
                             </div>
                             <div className="img">
-                                <img src="http://maxstroy.uz/nurimages/pineapple.jpg" alt="" />
+                                <img src="http://nurvape.ru/images/pineapple.jpg" alt="" />
                             </div>
                         </div>
                     </div>

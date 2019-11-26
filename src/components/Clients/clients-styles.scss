@@ -2,14 +2,16 @@
 
 .clients {
     width: 100%;
-    padding: 30px 0;
+    padding: 40px;
+    
 
     .title-primary {
-        margin-bottom: 30px;
+        margin-bottom: auto;
     }
 
     .row {
         justify-content: space-around;
+        margin: 150px 0;
     }
 
     .img {
@@ -17,6 +19,7 @@
         @include size(8);
         @include size-sm(12);
         @include size-xs(24);
+
         text-align: center;
         margin-bottom: 30px;
     }

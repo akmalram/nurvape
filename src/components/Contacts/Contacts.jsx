@@ -39,7 +39,7 @@ function Contacts() {
                             </a>
                         </div>
                     </div>
-                    <Iframe className="right-iframe" src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d904.7300729935251!2d37.62262455686545!3d55.75243170171207!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5962e69605%3A0xa4cf168ae7cb3ae5!2sSt.%20Basil&#39;s%20Cathedral!5e1!3m2!1sen!2sus!4v1574393522559!5m2!1sen!2sus" frameBorder="1" allowfullscreen="" />
+                    <Iframe className="right-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.9047065140194!2d37.87121887365655!3d55.742784689139626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aca4817aeb3ef%3A0x907e9ead41d6d59c!2z0YPQuy4g0J3QvtCy0L7QutC-0YHQuNC90YHQutCw0Y8sIDQwLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTExNjcy!5e0!3m2!1sru!2s!4v1574730952399!5m2!1sru!2s" frameBorder="1" allowfullscreen="" />
                 </div>
                 <div className="contact-form">
                     <h2 className="title-primary show-sm">Контакты</h2>

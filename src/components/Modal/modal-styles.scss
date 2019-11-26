@@ -46,19 +46,8 @@
     }
 
     &-content .done {
-        display: none;
         img {
             width: 150px;
-        }
-    }
-
-    &-content.done {
-        .form {
-            display: none;
-        }
-
-        .done {
-            display: block;
         }
     }
 
